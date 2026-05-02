@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kevin Menuja portfolio - web developer, software engineering student, and founder of Startek."
+    />
+    <title>Kevin Menuja | Developer & Founder</title>
+    <link rel="icon" href="Kevin.JPG" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="Kevin.JPG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="ambient-field" aria-hidden="true">
+      <span class="ambient-line ambient-line-one"></span>
+      <span class="ambient-line ambient-line-two"></span>
+      <span class="ambient-line ambient-line-three"></span>
+    </div>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-trail" aria-hidden="true"></div>
+    <canvas id="three-canvas" aria-hidden="true"></canvas>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a href="#top" class="brand-mark">
+          <span class="brand-sigil">
+            <img src="Kevin.JPG" alt="Kevin Menuja" />
+          </span>
+          <span>
+            <strong>Kevin Menuja</strong>
+            <small>Founder of Startek</small>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#startek">Startek</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Web Developer | Software Engineering Student | Founder of Startek</p>
+          <h1>Building Digital Experiences That Drive Real Impact</h1>
+          <p class="hero-text">
+            I help brands, founders, and growing teams turn ideas into polished websites, apps, and
+            digital systems with a sharp blend of engineering, design, and startup energy.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">View Work</a>
+            <a class="btn btn-ghost" href="#contact">Hire Me</a>
+          </div>
+          <div class="hero-metrics" aria-label="Professional highlights">
+            <span><strong>Founder</strong> Startek</span>
+            <span><strong>Focus</strong> Web + Software</span>
+            <span><strong>Ambassador</strong> Microsoft Student</span>
+          </div>
+          <div class="mobile-command-panel" aria-label="Mobile quick actions">
+            <a href="mailto:kevinmenuja11@gmail.com">
+              <strong>Start Project</strong>
+              <span>Fast email inquiry</span>
+            </a>
+            <a href="#services">
+              <strong>Explore Services</strong>
+              <span>Web, apps, design</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-orbit">
+            <span class="orbit-ring orbit-ring-one"></span>
+            <span class="orbit-ring orbit-ring-two"></span>
+            <div class="profile-card">
+              <div class="image-3d-frame portrait-3d">
+                <img src="Kevin.JPG" alt="Portrait of Kevin Menuja" />
+                <span class="depth-layer layer-one"></span>
+                <span class="depth-layer layer-two"></span>
+              </div>
+              <div class="status-strip">
+                <span class="pulse-dot"></span>
+                Available for high-impact digital projects
+              </div>
+            </div>
+            <div class="floating-badge badge-top">Startek</div>
+            <div class="floating-badge badge-bottom">Code. Design. Growth.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-shell" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Developer discipline with founder-level ownership.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass-panel bio-panel reveal">
+            <p>
+              I'm Kevin Menuja, a web developer and software engineering student building a career
+              at the intersection of clean technology, modern user experience, and practical
+              business outcomes.
+            </p>
+            <p>
+              As the founder of Startek, I work across development, marketing, UI/UX, and content
+              to help businesses launch sharper digital products and grow with confidence.
+            </p>
+            <div class="ambassador-tag">Microsoft Student Ambassador</div>
+          </article>
+          <div class="education-stack reveal">
+            <h3>Education Journey</h3>
+            <div class="timeline">
+              <div>
+                <span></span>
+                <p>Christ King College Pannipitiya</p>
+                <small>GCE O/L</small>
+              </div>
+              <div>
+                <span></span>
+                <p>ICBT Campus Colombo</p>
+                <small>Computing pathway</small>
+              </div>
+              <div>
+                <span></span>
+                <p>OTHM Level 3 Foundation Diploma</p>
+                <small>Academic foundation</small>
+              </div>
+              <div>
+                <span></span>
+                <p>Higher Diploma in Computing & Software Engineering</p>
+                <small>Cardiff Metropolitan University, UK</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section-shell" id="services">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Services</p>
+          <h2>Digital services built for speed, polish, and measurable growth.</h2>
+        </div>
+        <div class="card-grid services-grid">
+          <article class="service-card reveal">
+            <span>01</span>
+            <h3>Web Development</h3>
+            <p>Responsive, fast, conversion-focused websites for brands, portfolios, and startups.</p>
+          </article>
+          <article class="service-card reveal">
+            <span>02</span>
+            <h3>Mobile App Development</h3>
+            <p>Mobile-first product interfaces and app experiences designed around real users.</p>
+          </article>
+          <article class="service-card reveal">
+            <span>03</span>
+            <h3>Social Media Marketing</h3>
+            <p>Campaigns, content systems, and digital positioning that help brands get noticed.</p>
+          </article>
+          <article class="service-card reveal">
+            <span>04</span>
+            <h3>UI/UX Design</h3>
+            <p>Clean product flows, modern interfaces, and high-end layouts that feel effortless.</p>
+          </article>
+          <article class="service-card reveal">
+            <span>05</span>
+            <h3>Content Creation</h3>
+            <p>Visual and written content crafted for launch moments, social channels, and growth.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="company section-shell" id="startek">
+        <div class="startek-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Company</p>
+            <h2>Startek is a future-facing digital company for ambitious brands.</h2>
+            <p>
+              Startek brings development, marketing, and creative strategy together so businesses
+              can move from idea to launch with clarity.
+            </p>
+          </div>
+          <div class="brand-console reveal">
+            <div class="brand-image-3d">
+              <img src="Startek_Logo.png" alt="Startek logo" />
+            </div>
+            <div>
+              <h3>Mission</h3>
+              <p>Build elegant digital solutions that help modern businesses grow faster.</p>
+            </div>
+            <div>
+              <h3>Vision</h3>
+              <p>Become a trusted technology and digital growth partner for startups and SMEs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="subbrand-grid">
+          <article class="subbrand-card reveal">
+            <div class="subbrand-image-3d">
+              <img src="Startek_Digital.png" alt="Startek Digital logo" />
+            </div>
+            <div>
+              <h3>Startek Digital</h3>
+              <p>Marketing, brand visibility, social media strategy, and campaign execution.</p>
+            </div>
+          </article>
+          <article class="subbrand-card reveal">
+            <div class="subbrand-image-3d">
+              <img src="Startek_Web_Hub.jpeg" alt="Startek Web Hub logo" />
+            </div>
+            <div>
+              <h3>Startek Web Hub</h3>
+              <p>Websites, digital platforms, product interfaces, and development solutions.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="portfolio section-shell" id="work">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Selected work concepts shaped for real client outcomes.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-image project-photo">
+              <img src="Web Hub Image.png" alt="Startek Web Hub selected works preview" />
+              <span>Brand Platform</span>
+            </div>
+            <div class="project-content">
+              <h3>Startek Web Hub</h3>
+              <p>A premium service presence for web development, lead capture, and client trust.</p>
+              <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image project-photo">
+              <img src="SMMA Image Results.png" alt="Startek Digital selected works preview" />
+              <span>Growth System</span>
+            </div>
+            <div class="project-content">
+              <h3>Startek Digital</h3>
+              <p>A marketing-focused digital identity designed for campaigns and social growth.</p>
+              <div class="tech-stack"><span>Strategy</span><span>Design</span><span>Content</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image project-photo">
+              <img src="My Portfolio Image.png" alt="Kevin Menuja Portfolio selected works preview" />
+              <span>Founder Portfolio</span>
+            </div>
+            <div class="project-content">
+              <h3>Kevin Menuja Portfolio</h3>
+              <p>A personal brand hub combining education, founder story, services, and contact.</p>
+              <div class="tech-stack"><span>UI/UX</span><span>Branding</span><span>Frontend</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact">
+        <div class="contact-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's build something sharp, useful, and ready to grow.</h2>
+            <p>
+              Send a project inquiry, collaboration idea, or startup opportunity. I'll reply with
+              the next best step.
+            </p>
+            <div class="email-list">
+              <a href="mailto:kevinmenuja11@gmail.com">kevinmenuja11@gmail.com</a>
+              <a href="mailto:started.pvt.ltd11@gmail.com">started.pvt.ltd11@gmail.com</a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" action="mailto:kevinmenuja11@gmail.com" method="post" enctype="text/plain">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="social-strip reveal" aria-label="Social media links">
+          <a href="https://www.facebook.com/share/18S9foYUWq/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/kevsss_11" aria-label="Instagram" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@kevsss_410" aria-label="TikTok" target="_blank" rel="noreferrer">TikTok</a>
+          <a href="https://youtube.com/@kevinmenuja" aria-label="YouTube" target="_blank" rel="noreferrer">YouTube</a>
+          <a href="https://www.linkedin.com/in/kevin-menuja-st20345403" aria-label="LinkedIn" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://x.com/kevsss_11" aria-label="X Twitter" target="_blank" rel="noreferrer">X</a>
+          <a href="https://github.com/kevin11-cyber" aria-label="GitHub" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://learn.microsoft.com/en-us/users/KevinMenuja-20345403" aria-label="Microsoft Learn" target="_blank" rel="noreferrer">Microsoft Learn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Kevin Menuja. Built for impact with Startek energy.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <a class="mobile-hire-fab" href="mailto:kevinmenuja11@gmail.com" aria-label="Hire Kevin">
+      <span>Hire</span>
+    </a>
+
+    <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+      <a href="#top" class="is-active">
+        <span class="mobile-nav-icon"></span>
+        Home
+      </a>
+      <a href="#services">
+        <span class="mobile-nav-icon"></span>
+        Services
+      </a>
+      <a href="#work">
+        <span class="mobile-nav-icon"></span>
+        Work
+      </a>
+      <a href="#contact">
+        <span class="mobile-nav-icon"></span>
+        Contact
+      </a>
+    </nav>
+
+    <script src="script.js"></script>
+    <script src="three-scene.js"></script>
+    <script type="module">
+      import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js";
+
+      window.initPortfolioThree?.(THREE);
+    </script>
+  </body>
+</html>
